@@ -25,5 +25,6 @@ function Restart-ComputerService
     # It depends on the type of job you are executing on the remote machine as to if you want to use "-ErrorAction Stop" on your Invoke-Command.
     Invoke-Command -ComputerName $Computer -Credential $cred -ScriptBlock {
         Restart-Service -Name W32Time
+        New-Item -Type File C:\temp\jenkinstest.txt -Force
     }
 }
