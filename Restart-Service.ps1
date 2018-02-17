@@ -1,5 +1,5 @@
 # Ensure the build fails if there is a problem.
-# The build will fail if there are any errors on the remote machine too!
+# The build will fail if there are any errors on the remote machine too.
 $ErrorActionPreference = 'Stop'
 
 # Create a PSCredential Object using the "User" and "Password" parameters that you passed to the job
