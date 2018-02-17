@@ -16,7 +16,7 @@ $cred = New-Object System.Management.Automation.PSCredential -ArgumentList $User
 
 
 Describe "Restart-ComputerService" {
-    It "returns nothing" {
+    It "Creates test file" {
         Invoke-Command -ComputerName $Computer -Credential $cred -ScriptBlock {
             if(Get-Item C:\temp\jenkinstest.txt)
             {
